@@ -5,24 +5,38 @@ def validate(n):
     n_array = []
 
     # Itérer sur chaque caractère de la chaîne et le convertir en entier
-    for char in n_str:
+    for index, char in enumerate(n_str):
         n_int = int(char)
 
-        # si le nombre est pair alors le multiplier par 2 
-        if n_int % 2 != 0:
-            if n_int*2 > 9:
-                res = n_int*2 - 9
-                n_array.append(res)
+        # Si la longueur de n est paire, doubler chaque deuxième chiffre, sinon, doubler chaque deuxième chiffre à partir du deuxième
+        if len(n_str) % 2 == 0:
+            if index % 2 == 0:
+                double = n_int * 2
+                if double > 9:
+                    res = double - 9
+                    n_array.append(res)
+                else:
+                    n_array.append(double)
             else:
                 n_array.append(n_int)
         else:
-            n_array.append(n_int)
+            if index % 2 != 0:
+                double = n_int * 2
+                if double > 9:
+                    res = double - 9
+                    n_array.append(res)
+                else:
+                    n_array.append(double)
+            else:
+                n_array.append(n_int)
 
+    print(n_array)
+    print(sum(n_array) % 10)
     if sum(n_array) % 10 != 0:
         return False
     else: 
         return True
 
-n = 1230
+n = 1714
 resultat = validate(n)    
 print(resultat) 
