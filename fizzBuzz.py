@@ -1,28 +1,23 @@
 def reverse_fizz_buzz(list_of_numbers):
     new_list_of_numbers = []
-    new_array = []
-
-    fizz_found = False
-    buzz_found = False
+    fizz_buzz = True
 
     for index, char in enumerate(list_of_numbers):
-        if char == "Fizz" and not fizz_found:
-            fizz = index + 1
-            new_list_of_numbers.append(fizz)
-            fizz_found = True
-        elif char == "Buzz" and not buzz_found:
-            buzz = index + 1
-            new_list_of_numbers.append(buzz)
-            buzz_found = True
-        elif char == "Fizz" and fizz_found or char == "Buzz" and buzz_found:
-            res = index + 1
-            new_array.append(res)
-        elif char == "FizzBuzz" and not buzz_found:
-            fizz_buzz = fizz * new_array[-1] + 1
-            new_list_of_numbers.append(fizz_buzz)
-            # print(fizz_buzz)
+        if char == "FizzBuzz" and fizz_buzz:
+            res = index +1 
+            fizz_buzz = False 
+            new_list_of_numbers.append(res)    
+            # print(new_list_of_numbers)
+        elif char == "FizzBuzz" and not fizz_buzz: 
+            resp = index +1 
+            if resp % res == 0:
+                new_list_of_numbers.append(res) 
+            else:
+                fizz_buzz = False 
+                new_list_of_numbers.append(resp)    
+                print(new_list_of_numbers)
 
-            
+
     return tuple(new_list_of_numbers) 
 
 
@@ -38,5 +33,6 @@ def reverse_fizz_buzz(list_of_numbers):
 list_of_numbers = [1,"FizzBuzz",3,"FizzBuzz",5,"FizzBuzz"]
 resultat = reverse_fizz_buzz(list_of_numbers)    
 print(resultat) 
+
 
 
