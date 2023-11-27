@@ -1,13 +1,8 @@
 def array_diff(a, b):
-    new_array = []
-
-    if a == [] or b == []:
-        return a
-    
-    for i in a:
-        if i != b[0]:
-            new_array.append(i)
+    # here we solve the problem using not in operator. It permits to filter from array a
+    # we create a new_array
+    new_array = [x for x in a if x not in b]
     return new_array
 
-result = array_diff([1,2,2], [])
+result = array_diff([1,2,3], [1, 2])
 print(result)
