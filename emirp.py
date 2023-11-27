@@ -39,7 +39,7 @@ def is_prime(num):
 
 def find_emirps(n):
     primes = primes_slice(n)
-    print(primes)
+    # print(primes)
     emirps = []
     for prime in primes:
         reversed_prime = int(str(prime)[::-1]) # je renvoie la valeur inversée de chaque num
@@ -53,6 +53,6 @@ def find_emirps(n):
     # print([len(emirps), max(emirps), sum(emirps)])
     return [len(emirps), max(emirps), sum(emirps)]
 
-n = 50
+n = 113
 result = find_emirps(n)
-# print(result)
+print(result)
