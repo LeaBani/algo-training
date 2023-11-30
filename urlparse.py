@@ -1,21 +1,25 @@
 from urllib.parse import urlparse
 
 def domain_name(url):
-    # Parse the URL using urlparse https://docs.python.org/3/library/urllib.parse.html
+    
+    # Add 'http://' if no scheme is provided so that the algo is working for any url
+    if not urlparse(url).scheme:
+        url = 'http://' + url
+
+    # Parse the URL
     parsed_url = urlparse(url)
 
-    # Get the netloc attribute (network location)
+    # Get the network location part from the parsed URL
     netloc = parsed_url.netloc
-    print(netloc)
 
     # Check if 'www.' is present and remove it
     if netloc.startswith("www."):
         netloc = netloc[4:]
 
-    # Split netloc to keep just the domain name (index 0 -> first value)
+    # Split the netloc to get just the domain name - [0], the first value
     domain_name = netloc.split('.')[0]
 
     return domain_name
 
-result = domain_name("http://www.github.com/carbonfive/raygun")
+result = domain_name("www.xakep.ru")
 print(result)
