@@ -2,33 +2,40 @@ function pipeFix(numbers){
 
     const array = [];
     
-    for (const elem of numbers) {
-        array.push(elem)
-    }
+    // for (const elem of numbers) {
+    //     array.push(elem)
+    // }
 
-    for (let index = 0; index < numbers.length; index++) {
-        const element = numbers[index];
-        console.log(element)
-        if (element - (numbers[index] -1) === 1) {
-            console.log(element, numbers[index])
-            if (!numbers.includes(element+1)) {    
-                array.push(element+1)
-            }
-        } else {
-            console.log('test')
-        }
+//     for (let index = 0; index < numbers.length; index++) {
+//         const element = numbers[index];
+//         console.log(element)
+//         if (element - (numbers[index] -1) === 1) {
+//             console.log(element, numbers[index])
+//             if (!numbers.includes(element+1)) {    
+//                 array.push(element+1)
+//             }
+//         } else {
+//             console.log('test')
+//         }
         
+//     }
+
+
+//     const sortArray = 
+//     array.sort(function(a, b) {
+//         return a - b;
+//       })
+
+//       console.log(sortArray)
+
+//     return sortArray;
+// }
+
+    for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+        array.push(i);
     }
 
-
-    const sortArray = 
-    array.sort(function(a, b) {
-        return a - b;
-      })
-
-      console.log(sortArray)
-
-    return sortArray;
+    return array
 }
 
 pipeFix([1,2,3,12])
