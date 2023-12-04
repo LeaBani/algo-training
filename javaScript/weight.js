@@ -11,10 +11,10 @@ function orderWeight(str) {
         newDigits.push(sum)
     })
     
-    console.log(newDigits);
-    numbers.sort((a, b) => {
-        // console.log(numbers);
-    })
+    newDigits.sort(function(a, b){return a-b});
+
+    console.log('test', newDigits);
+
 }
   
   const input = "56 65 74 100 99 68 86 180 90";
