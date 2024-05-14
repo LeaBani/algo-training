@@ -1,0 +1,57 @@
+<html><head>
+
+</head>
+
+<body>
+
+<svg width="650" height="450" style="background-color:	rgba(200,200,200, 0.5)">
+
+<circle id="7" style="fill:#CCC8D1; stroke:black; stroke-width:3px;" cx="100" cy="85" r="60"></circle> 
+<circle id="1" style="fill:#9633FF; stroke:black; stroke-width:3px;" cx="200" cy="100" r="60"></circle> 
+<circle id="2" style="fill:#A860F4; stroke:black; stroke-width:3px;" cx="300" cy="120" r="60"></circle> 
+<circle id="3" style="fill:#AA71E7; stroke:black; stroke-width:3px;" cx="400" cy="110" r="60"></circle> 
+<circle id="4" style="fill:#B58FDE; stroke:black; stroke-width:3px;" cx="500" cy="150" r="60"></circle> 
+<circle id="5" style="fill:#BCA7D3; stroke:black; stroke-width:3px;" cx="460" cy="250" r="60"></circle> 
+<circle id="6" style="fill:#D4CADF; stroke:black; stroke-width:3px;" cx="350" cy="270" r="60"></circle> 
+
+<circle id="11" style="fill:#FFF; stroke:black; stroke-width:1px;" cx="80" cy="70" r="10"></circle> 
+<circle id="12" style="fill:#FFF; stroke:black; stroke-width:1px;" cx="120" cy="70" r="10"></circle> 
+<circle id="13" style="fill:#000; stroke:black; stroke-width:1px;" cx="80" cy="75" r="2"></circle> 
+<circle id="14" style="fill:#000; stroke:black; stroke-width:1px;" cx="120" cy="75" r="2"></circle> 
+
+<circle style="fill:#4F0871; stroke:black; stroke-width:1px;" cx="120" cy="30" r="7"></circle> 
+<circle style="fill:#4F0871; stroke:black; stroke-width:1px;" cx="125" cy="20" r="7"></circle> 
+<circle style="fill:#4F0871; stroke:black; stroke-width:1px;" cx="130" cy="8" r="7"></circle> 
+<circle style="fill:#4F0871; stroke:black; stroke-width:1px;" cx="80" cy="30" r="7"></circle> 
+<circle style="fill:#4F0871; stroke:black; stroke-width:1px;" cx="75" cy="20" r="7"></circle> 
+<circle style="fill:#4F0871; stroke:black; stroke-width:1px;" cx="70" cy="8" r="7"></circle> 
+
+
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="180" cy="165" rx="15" ry="10"></ellipse>
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="220" cy="165" rx="15" ry="10"></ellipse>
+
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="280" cy="180" rx="15" ry="10"></ellipse>
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="320" cy="180" rx="15" ry="10"></ellipse>
+
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="380" cy="170" rx="15" ry="10"></ellipse>
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="420" cy="170" rx="15" ry="10"></ellipse>
+
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="560" cy="180" rx="15" ry="10"></ellipse>
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="530" cy="200" rx="15" ry="10"></ellipse>
+
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="480" cy="310" rx="15" ry="10"></ellipse>
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="440" cy="310" rx="15" ry="10"></ellipse>
+
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="370" cy="330" rx="15" ry="10"></ellipse>
+<ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="320" cy="330" rx="15" ry="10"></ellipse>
+
+<path style="stroke: rgb(0, 0, 0); fill: rgb(226, 52, 144);" d="M 90 110 C 30 100 100 150 120 100"></path>
+
+<text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 26.8px;" x="150" y="400">La chenille qui vous forme</text>
+  
+</svg>
+
+
+
+
+</body></html>
